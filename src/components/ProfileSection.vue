@@ -30,7 +30,7 @@ import EmailButton from './EmailButton.vue'
     </div>
 
     <!-- Social Media  -->
-    <div class="flex items-center space-x-3 justify-center w-full md:justify-start">
+    <div class="flex items-center justify-center w-full space-x-3 md:justify-start">
       <SocialLinkButton
         href="https://www.facebook.com/aungthuzaw322/"
         icon="fa-brands fa-facebook"
@@ -43,7 +43,10 @@ import EmailButton from './EmailButton.vue'
         tooltip="Explore my projects on GitHub"
       />
 
-      <EmailButton icon="fa-solid fa-envelope" tooltip="Get in touch via email" />
+      <EmailButton
+        icon="fa-solid fa-envelope"
+        tooltip="Get in touch via email ( aungthuzaw003@gmail.com )"
+      />
     </div>
   </div>
 </template>
