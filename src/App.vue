@@ -1,30 +1,41 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import ExperienceSection from "./components/ExperienceSection.vue";
+import ProfileSection from "./components/ProfileSection.vue";
+import AboutMeSection from "./components/AboutMeSection.vue";
+import ProjectSection from "./components/ProjectSection.vue";
+import ResumeButton from "./components/ResumeButton.vue";
+import Spotlight from "./components/Spotlight.vue";
+import Navbar from "./components/Navbar.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-</template>
+  <div class="bg-slate-900 max-h-screen overflow-scroll min-w-screen">
+    <div class="fixed z-50 block bottom-10 right-6 md:hidden">
+      <ResumeButton />
+    </div>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+    <Navbar />
+
+    <Spotlight />
+
+    <section class="py-10 md:py-20">
+      <div
+        class="container relative flex flex-col items-start justify-between h-full px-8 mx-auto space-y-10 md:space-y-0 md:space-x-5 md:flex-row"
+      >
+        <ProfileSection />
+
+        <div class="w-full h-full space-y-10 md:w-1/2">
+          <AboutMeSection />
+
+          <hr />
+
+          <ExperienceSection />
+
+          <hr />
+
+          <ProjectSection />
+        </div>
+      </div>
+    </section>
+  </div>
+</template>
