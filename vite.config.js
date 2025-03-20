@@ -6,7 +6,7 @@ import { URL } from "url";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: "/portfolio/",
+  base: "/Portfolio/",
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
