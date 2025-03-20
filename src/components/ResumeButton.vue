@@ -3,8 +3,9 @@
 </script>
 
 <template>
+  <!-- href="public/resume.pdf" -->
   <a
-    href="/public/resume.pdf"
+    href="https://aung-thu-zaw.github.io/Portfolio/resume.pdf"
     download="resume.pdf"
     class="relative flex items-center justify-start w-10 h-10 overflow-hidden transition-all duration-200 border rounded-full shadow-lg cursor-pointer bg-slate-800 hover:bg-cyan-600 hover:border-cyan-500 text-lightText border-slate-600 group hover:w-28 hover:rounded-lg active:translate-x-1 active:translate-y-1 md:animate-none animate-bounce hover:animate-none"
   >
